@@ -1,0 +1,8 @@
+numpy
+pandas
+fastapi
+uvicorn[standard]
+pydantic
+opencv-python
+scipy
+matplotlib

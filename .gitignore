@@ -1,0 +1,65 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Data & output artifacts (keep dirs, ignore contents)
+data/*
+!data/.gitkeep
+output/*
+!output/.gitkeep
+
+# Test videos: keep the folder + README + annotations, ignore the media
+!data/test_videos/
+data/test_videos/*
+!data/test_videos/README.md
+!data/test_videos/annotations/
+data/test_videos/annotations/*
+!data/test_videos/annotations/.gitkeep
+
+# Env / IDE
+.env
+.vscode/
+.idea/
+# Large model weights
+*.pt
+
+# Dataset archives
+*.zip
+*.rar
+*.7z
+
+# Log files
+*.log
+
+# Generated training outputs
+runs/
+best/
+
+# Large generated outputs
+output/
+
+# OS files
+Thumbs.db
+.DS_Store
+# Python virtual environments
+.venv/
+.venv-gpu/
+venv/
+# TrackNet generated data
+tracknet/dataset/
+tracknet/checkpoints/
+tracknet/weights/
+tracknet/runs/
+
+# Ignore images and videos inside TrackNet
+tracknet/**/*.jpg
+tracknet/**/*.jpeg
+tracknet/**/*.png
+tracknet/**/*.mp4
+tracknet/**/*.avi
+tracknet/**/*.csv
+
